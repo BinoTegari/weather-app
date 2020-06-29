@@ -1,0 +1,16 @@
+
+<div class="contentContainer">
+<div id="divWeatherMain" >
+    <div class="weatherWidgetRow"><img src="{{WeatherData.current.weather_icons}}" alt="иконка погоды))" class="img"></div>
+    <div class="weatherWidgetRow" style="font-size: 32px;margin-top: 5px;">{{WeatherData.current.temperature}}°</div>
+    <div class="weatherWidgetRow" style="font-size: 12px;">Ощущается как: {{WeatherData.current.feelslike}}°</div>
+    <div class="weatherWidgetRow" style="font-size: 25px; margin-top: 10px;">{{WeatherData.location.name}}</div>
+    <div class="weatherWidgetRow" style="font-size: 12px;">Влажность: {{WeatherData.current.humidity}}%</div>
+    <div class="weatherWidgetRow">
+        <input type="text" #userInput placeholder="Введите город">
+        
+        <button class="input_group text btn" (click) = "getCityWeatherData(userInput.value)">Поиск</button>
+        
+    </div>
+</div>
+</div>
