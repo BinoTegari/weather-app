@@ -7,7 +7,7 @@ import { HttpClient } from '@angular/common/http';
     providedIn: 'root'
 })
 export class WeatherService {
-   
+
     constructor(private http: HttpClient){}
 
     getWeatherDataByCity(city: string): Observable<any> {
